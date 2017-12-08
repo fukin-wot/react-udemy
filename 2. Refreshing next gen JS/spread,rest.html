@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <script>
+        //spread example
+        const numbers = [1, 2, 3];
+        const newNumbers1 = [...numbers, 4];
+        const newNumbers2 = [numbers, 4];
+
+
+        const person = {
+            name: "sacros",
+            lname: "anct"
+        };
+
+        const newPerson = {
+            ...person,
+            age: "6.8π"
+        };
+
+
+
+        //rest example
+        const myFilter = (...arg) => {
+            return arg.filter(el => el === 1);
+            //return arg; 
+        }
+
+
+        const yo = () => {
+            console.log(newNumbers1);
+            console.log(newNumbers2);
+            console.log(newPerson);
+            console.log(myFilter(1, 2, 3, 1));
+        }
+    </script>
+</head>
+
+<body>
+    <p id="ans"></p>
+    <button onclick="yo()">Press!</button>
+
+</body>
+
+</html>

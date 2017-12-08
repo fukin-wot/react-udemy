@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <script>
+        function yo0() {
+            var  myName = "sacros";
+            console.log(myName);
+            document.getElementById("ans").innerHTML = myName;
+            myName = "anct";
+            console.log(myName);
+            document.getElementById("ans").innerHTML = myName;
+        }
+        function yo1() {
+            let myName = "sacros";
+            console.log(myName);
+            document.getElementById("ans").innerHTML = myName;
+            myName = "anct";
+            console.log(myName);
+            document.getElementById("ans").innerHTML = myName;
+        }
+        function yo2() {
+            const myName = "sacros";
+            console.log(myName);
+            document.getElementById("ans").innerHTML = myName;
+            myName = "anct";
+            console.log(myName);
+            document.getElementById("ans").innerHTML = myName;
+        }
+    </script>
+</head>
+
+<body>
+    <p id="ans"></p>
+    <button onclick="yo0()">Press0!</button>
+    <button onclick="yo1()">Press1!</button>
+    <button onclick="yo2()">Press2!</button>
+</body>
+
+</html>

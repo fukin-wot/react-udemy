@@ -1,0 +1,23 @@
+person.js->
+const person = {
+    name: 'sacros'
+}
+export default person
+
+
+utility.js->
+export const clean = () => {...}
+export const baseData = 10;
+
+
+app.js->
+import person from './person.js'
+import prs from './person.js'
+
+import {clean} from './utility.js'
+import {basData} from './utility.js'
+import {clean as cln} from './utility.js'
+import * as bundled from './utility.js'
+then we can use->
+bundled.baseData
+bundled.clean

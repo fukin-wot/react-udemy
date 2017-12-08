@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script>
+            function printMyName1(name){
+                console.log(name);
+                document.getElementById("ans").innerHTML = name;
+            }
+            const printMyName2 = name => {
+                console.log(name);
+                document.getElementById("ans").innerHTML = name;
+            }
+            const printMyNameAndAge = (name, age) => {
+                console.log(name+age);
+                document.getElementById("ans").innerHTML = name+age;
+            }
+            const printYoLo = () => {
+                console.log("YoLo");
+                document.getElementById("ans").innerHTML = "YoLo";
+            }
+            const multiply = number => {
+                return number*2;
+            }
+            const multiply2 = number => number * 2;
+        </script>
+    </head>
+    <body>
+        <p id="ans"></p>
+        <button onclick="printMyName1('sacros')">Press1!</button>
+        <button onclick="printMyName2('anct')">Press2!</button>
+        <button onclick="printMyNameAndAge('Age:',21)">Press3!</button>
+        <button onclick="printYoLo()">Press4!</button>
+        <button onclick="document.getElementById('ans').innerHTML = multiply(5);">Press5!</button>
+        <button onclick="document.getElementById('ans').innerHTML = multiply(6);">Press6!</button>
+    </body>
+</html>

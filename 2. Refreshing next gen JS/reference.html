@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script>
+            const yo = () => {
+                let number = 1;
+                const num2 = number;
+                number = 2;
+                console.log(num2);
+                
+                const person ={
+                  name: 'sacros'
+                };
+                const secondPerson = person;
+                const thirdPerson = {
+                  ...person
+                };
+                person.name = 'anct';
+                console.log(thirdPerson);
+                console.log(secondPerson);
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="yo()">Press!</button>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <script>
+        class Human {    
+            species = 'Homo Sapien';
+            printSpecies = () => {
+                console.log(this.species);
+                document.getElementById("ans2").innerHTML = this.species;
+            }
+        }
+        class Person extends Human {
+            name = 'sacros';
+            species = 'Homo technologicus'
+            printMyName = () => {
+                console.log(this.name);
+                document.getElementById("ans1").innerHTML = this.name;
+            }
+        }
+        function yo() {
+            const person = new Person();
+            person.printMyName();
+            person.printSpecies();
+        }
+    </script>
+</head>
+
+<body>
+    <span id="ans1"></span>
+    <span id="ans2"></span>
+    <button onclick="yo()">Press!</button>
+</body>
+
+</html>
+
+<!-->
+class Human {    
+  species = 'Homo Sapien';
+  printSpecies = () => {
+  console.log(this.species);
+  }
+}
+class Person extends Human {
+  name = 'sacros';
+  species = 'Homo technologicus';
+  printMyName = () => {
+    console.log(this.name);
+  }
+}
+  const person = new Person();
+  person.printMyName();
+  person.printSpecies();
+<-->
