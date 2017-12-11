@@ -51,6 +51,8 @@ class App extends Component {
         <button
           style={style}
           onClick={() => this.switchNameHandler('SacrosAnct')}>Switch Name</button>
+          {//or, click={this.switchHandler.bind(this, 'sacros')}}
+          }
         <Person
           name={this.state.persons[0].name}
           age={this.state.persons[0].age}/>
@@ -58,6 +60,7 @@ class App extends Component {
           name={this.state.persons[1].name}
           age={this.state.persons[1].age}
           click={this.switchNameHandler.bind(this, 'sacros')}
+          //or, click={() => this.switchHandler('sacros')
           changed={this.nameChangedHandler}>I'm learning hybrid development</Person>
         <Person
           name={this.state.persons[2].name}
