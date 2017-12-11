@@ -46,8 +46,8 @@ class App extends Component {
 
     return (
       <div className="App">
-        <h1>Hell'o mah niggas</h1>
-        <p>Hope you fine</p>
+        <h1>Hello World!</h1>
+        <p>This is a demo App</p>
         <button
           style={style}
           onClick={() => this.switchNameHandler('SacrosAnct')}>Switch Name</button>
@@ -58,7 +58,7 @@ class App extends Component {
           name={this.state.persons[1].name}
           age={this.state.persons[1].age}
           click={this.switchNameHandler.bind(this, 'sacros')}
-          changed={this.nameChangedHandler}>I'm real stupid</Person>
+          changed={this.nameChangedHandler}>I'm learning hybrid development</Person>
         <Person
           name={this.state.persons[2].name}
           age={this.state.persons[2].age}/>
