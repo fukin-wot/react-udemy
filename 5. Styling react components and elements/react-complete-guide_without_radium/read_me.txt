@@ -9,10 +9,10 @@ in .dev.js->
 in module: , find test: css
 
 modules: true,
-                  localIdentName: '[name]__[local]__[hash:base64:5]'
+localIdentName: '[name]__[local]__[hash:base64:5]'
 
 in .prod.js->
 find module:, test: css, use:, options:
 there, add
 modules: true,
-                  localIdentName: '[name]__[local]__[hash:base64:5]'
+localIdentName: '[name]__[local]__[hash:base64:5]'
