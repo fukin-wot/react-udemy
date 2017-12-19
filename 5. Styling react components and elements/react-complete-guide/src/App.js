@@ -98,27 +98,9 @@ class App extends Component {
             style={style}
             onClick={this.togglePersonsHandler}>Toggle Persons</button>
           {persons}
-          {/* or do this ->
-          {this.state.showPersons ?
-            <div>
-              <Person
-                name={this.state.persons[0].name}
-                age={this.state.persons[0].age} />
-              <Person
-                name={this.state.persons[1].name}
-                age={this.state.persons[1].age}
-                click={this.switchNameHandler.bind(this, 'sacros')}
-                changed={this.nameChangedHandler}>I'm learning hybrid development</Person>
-              <Person
-                name={this.state.persons[2].name}
-                age={this.state.persons[2].age} />
-            </div> : null
-          }
-          */}
         </div>
       </StyleRoot>
     );
-    // return React.createElement('div', {className: 'App'}, React.createElement('h1', null,'Hell\'o mah niggas!!!'));
   }
 }
 //wrapped the export with Radium function for pseudo selector (:hover) 

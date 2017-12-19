@@ -18,11 +18,15 @@
             age: "6.8π"
         };
 
+        const newestPerson = {
+            person,
+            age: "6.8π"
+        }
 
 
         //rest example
         const myFilter = (...arg) => {
-            return arg.filter(el => el === 1);
+            return arg.filter(el => el === 3);
             //return arg; 
         }
 
@@ -31,6 +35,7 @@
             console.log(newNumbers1);
             console.log(newNumbers2);
             console.log(newPerson);
+            console.log(newestPerson);
             console.log(myFilter(1, 2, 3, 1));
         }
     </script>

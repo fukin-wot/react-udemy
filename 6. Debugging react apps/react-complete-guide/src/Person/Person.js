@@ -3,7 +3,7 @@ import classes from './Person.css';
 
 const person = (props) => {
     const rnd = Math.random();
-
+    //30% chance of error
     if(rnd > 0.7) {
         throw new Error('Something went wrong');
     }

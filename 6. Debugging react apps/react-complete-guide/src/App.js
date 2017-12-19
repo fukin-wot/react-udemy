@@ -51,6 +51,7 @@ class App extends Component {
       persons = (
         <div>
           {this.state.persons.map((person, index) => {
+            //encapsulate the error prone part with ErrorBoundary
             return <ErrorBoundary key={person.id}><Person
               name={person.name}
               age={person.age}
@@ -65,10 +66,10 @@ class App extends Component {
 
     const assignedClasses = [];
     if (this.state.persons.length <= 2) {
-      assignedClasses.push(classes.red); // classes = ['red']
+      assignedClasses.push(classes.red); // assignedClasses = ['red']
     }
     if (this.state.persons.length <= 1) {
-      assignedClasses.push(classes.bold); // classes = ['red', 'bold']
+      assignedClasses.push(classes.bold); // assignedClasses = ['red', 'bold']
     }
 
     return (
@@ -79,26 +80,8 @@ class App extends Component {
           className={btnClass}
           onClick={this.togglePersonsHandler}>Toggle Persons</button>
         {persons}
-        {/* or do this ->
-        {this.state.showPersons ?
-          <div>
-            <Person
-              name={this.state.persons[0].name}
-              age={this.state.persons[0].age} />
-            <Person
-              name={this.state.persons[1].name}
-              age={this.state.persons[1].age}
-              click={this.switchNameHandler.bind(this, 'sacros')}
-              changed={this.nameChangedHandler}>I'm learning hybrid development</Person>
-            <Person
-              name={this.state.persons[2].name}
-              age={this.state.persons[2].age} />
-          </div> : null
-        }
-        */}
       </div>
     );
-    // return React.createElement('div', {className: 'App'}, React.createElement('h1', null,'Hell\'o mah niggas!!!'));
   }
 }
 export default App;
